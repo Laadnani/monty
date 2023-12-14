@@ -22,7 +22,6 @@ void push(stack_t **stack, unsigned int line)
 	if (current == NULL)
 	{
 		printf("Error: malloc failed\n");
-		free(b);
 		exit(EXIT_FAILURE);
 	}
 	current->n = atoi(b);

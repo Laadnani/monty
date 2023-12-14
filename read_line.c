@@ -34,5 +34,6 @@ void read_line(char *c, stack_t **stack)
 	{
 		free(line);
 	}
+	free_stack(stack);
 	fclose(pf);
 }

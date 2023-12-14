@@ -22,7 +22,6 @@ typedef struct stack_s
         struct stack_s *prev;
         struct stack_s *next;
 } stack_t;
-extern stack_t **global_node;
 
 /**
  * struct instruction_s - opcode and its function
@@ -42,5 +41,5 @@ void read_line(char *c, stack_t **stack);
 void exec_com(stack_t **stack, char *com, unsigned int num);
 void push(stack_t **stack, unsigned int line);
 void pall(stack_t **stack, unsigned int line_number);
-
+void free_stack();
 #endif
