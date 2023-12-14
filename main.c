@@ -1,5 +1,5 @@
 #include "monty.h"
-stack_t **global_node;
+
 
 /**
  * main - read the file and execute its lines
@@ -8,7 +8,7 @@ stack_t **global_node;
  * Return: executed lines or error otherwise
  */
 
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
 	stack_t *node;
 
@@ -18,7 +18,6 @@ int main(int argc, char* argv[])
 		exit(EXIT_FAILURE);
 	}
 	node = NULL;
-	global_node = &node;
 	read_line(argv[1], &node);
 	return (0);
 }

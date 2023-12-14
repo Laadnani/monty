@@ -2,8 +2,8 @@
 
 /**
  * read_line - read the line of the file
- * @pf: file to read lines from
- * Return: 0 on success and -1 on failure
+ * @c: file to read lines from
+ * @stack: head node to start with
  */
 
 void read_line(char *c, stack_t **stack)
