@@ -37,6 +37,7 @@ typedef struct instruction_s
         void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 extern stack_t **global_node;
+void pint(stack_t **stack, unsigned int line);
 void read_line(char *c, stack_t **stack);
 void exec_com(stack_t **stack, char *com, unsigned int num);
 void push(stack_t **stack, unsigned int line);

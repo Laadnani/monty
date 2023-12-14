@@ -13,6 +13,7 @@ void exec_com(stack_t **stack, char *com, unsigned int num)
 	instruction_t ops[] = {
 		{"push", push},
 		{"pall", pall},
+		{"pint", pint},
 		{NULL, NULL}
 	};
 	for (i = 0; ops[i].opcode; i++)
