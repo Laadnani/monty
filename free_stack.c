@@ -2,6 +2,7 @@
 
 /**
  * free_stack - free the used space
+ * @stack: node to be freed
  */
 
 void free_stack(stack_t **stack)
